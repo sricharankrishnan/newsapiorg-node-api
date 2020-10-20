@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--App Meta Includes Starts Here-->
+    <%- include("../../partials/app-meta/index.html") %>
+    <!--App Meta Includes Ends Here-->
+  </head>
+  <body class="homePage" id="homePage">
+    <!--App Content-->
+    <div class="approot" id="approot">
+      <!--App Navigation Starts Here-->
+      <%- include("../../partials/app-nav/index.html") %>
+      <!--App Navigation Ends Here-->
+
+      <!--App Content Starts Here-->
+      <%- include("./content.partial.html") %>
+      <!--App Content Ends Here-->
+
+      <!--App Footer Starts Here-->
+      <%- include("../../partials/app-footer/index.html") %>
+      <!--App Footer Ends Here-->
+    </div>
+    <!--App Content-->
+
+    <!--[Partials Insert]: Web Font Loader-->
+    <%- include("../../partials/app-webfonts/index.html") %>
+    <!--[Partials Insert]: Web Font Loader-->
+
+    <!--Javascript File Requirements Starts Here-->
+    <script src="/scripts/home/index.min.js"></script>
+    <!--Javascript File Requirements Ends Here-->
+  </body>
+</html>
