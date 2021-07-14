@@ -7,6 +7,8 @@ Boiler plate for building nodejs/express applications.
 │   └── home
 │       ├── api
 │       │   └── sample.api.js
+│       ├── data
+│       │   └── example_1.json
 │       ├── handlers
 │       │   └── index.handlers.js
 │       └── service
