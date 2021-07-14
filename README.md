@@ -3,16 +3,60 @@ Boiler plate for building nodejs/express applications.
 
 ## Structure
 ```
-- server.js
-- package.json
-- package-lock.json
-- controllers
-- middleware
-- models
-- public
-- routes
-- static
-- utils
+├── controllers
+│   └── home
+│       ├── api
+│       │   └── sample.api.js
+│       ├── handlers
+│       │   └── index.handlers.js
+│       └── service
+│           └── sample.service.js
+├── middleware
+│   └── app.middleware.js
+├── models
+│   ├── error-response.models.js
+│   └── success-response.models.js
+├── package.json
+├── package-lock.json
+├── public
+│   └── notes.txt
+├── README.md
+├── routes
+│   ├── home
+│   │   └── index.routes.js
+│   ├── index.routes.js
+│   └── static.routes.js
+├── server.js
+├── static
+│   ├── assets
+│   │   ├── icons
+│   │   │   ├── app-favicon.png
+│   │   │   └── app-icon.svg
+│   │   └── images
+│   │       └── cubes-bg.jpg
+│   ├── css
+│   │   └── home
+│   │       └── styles.min.css
+│   ├── scripts
+│   │   └── home
+│   │       └── index.min.js
+│   └── views
+│       ├── home
+│       │   └── templates
+│       │       ├── content.partial.html
+│       │       └── index.html
+│       └── partials
+│           ├── app-footer
+│           │   └── index.html
+│           ├── app-meta
+│           │   └── index.html
+│           ├── app-nav
+│           │   └── index.html
+│           └── app-webfonts
+│               └── index.html
+└── utils
+    ├── handler-template.js
+    └── logger.js
 ```
 
 * __server.js__: central point from which the application would start running
