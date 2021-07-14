@@ -4,7 +4,7 @@
   "description": "NodeJS Application - Backend Structure",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./server.js"
   },
   "author": "Sricharan Krishnan | https://github.com/sricharankrishnan",
   "dependencies": {

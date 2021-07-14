@@ -1,19 +1,24 @@
 /* establish an approot */
 global.approot = __dirname;
 
-/* rqeuired imports for initializing the app */
-let path = require("path");
+/* package imports */
+let __base = global.approot;
 require("dotenv").config();
 let express = require("express");
 let app = express();
-let approot = global.approot;
-let routesCentral = require(path.join(approot, "app-controller", "routes", "index.js"));
 
-/* start the server */
-let appPort = process.env.PORT;
-app.listen(appPort, function() {
-  console.log("Node-App-Jquery is running @ http://localhost:" + appPort + "/");
-});
+/* app imports */
+let consoleLogger = require(__base + "/utils/logger.js");
+let {PORT} = process.env;
+let routes = require(__base + "/routes/index.routes.js");
 
-/* initialize all the routes for the web app */
-routesCentral(app);
+const App = () => {
+  /* call routes central handler */
+  routes(app);
+
+  /* start the server */
+  app.listen(PORT, function() {
+    consoleLogger("App running @ http://localhost:" + PORT + "/");
+  });
+};
+App();
