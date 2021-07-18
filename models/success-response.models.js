@@ -1,7 +1,9 @@
 /* standardized success response */
-let successResponse = {
-  code: "api-success",
-  message: "Request completed. Check payload for more information",
-  payload: null
+class SuccessResponse {
+  constructor() {
+    this.code = "api-ok",
+    this.message = "Request completed. Check payload for more information",
+    this.payload = null
+  };
 };
-module.exports = successResponse;
+module.exports = SuccessResponse;

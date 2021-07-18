@@ -5,20 +5,22 @@ global.approot = __dirname;
 let __base = global.approot;
 require("dotenv").config();
 let express = require("express");
-let app = express();
 
 /* app imports */
 let consoleLogger = require(__base + "/utils/logger.js");
-let {PORT} = process.env;
 let routes = require(__base + "/routes/index.routes.js");
 
 const App = () => {
+  let app = express();
+  let {PORT} = process.env;
+  
   /* call routes central handler */
   routes(app);
 
   /* start the server */
   app.listen(PORT, function() {
-    consoleLogger("App running @ http://localhost:" + PORT + "/");
+    consoleLogger(`News.Api.Org - server running in ${PORT}`);
+    consoleLogger("How can I help you today?");
   });
 };
 App();

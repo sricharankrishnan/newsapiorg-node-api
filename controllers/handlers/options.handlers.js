@@ -5,11 +5,12 @@ const HandlerTemplate = require(__base + "/utils/handler-template.js");
 
 /* imports */
 const fileImports = {
-  service: {
-    sampleService: require("../service/sample.service.js")
+  models: {
+    error: require(__base + "/models/error-response.models.js"),
+    success: require(__base + "/models/success-response.models.js")
   },
-  api: {
-    sampleApi: require("../api/sample.api.js")
+  data: {
+    options: require(__base + "/controllers/data/options.json")
   }
 };
 
@@ -20,7 +21,6 @@ class Handler extends HandlerTemplate {
 
   /* entry */
   static main(req, res) {
-    consoleLogger("Home Page - initializing.");
     let handler = new Handler(req, res);
     handler.initialize();
   };
@@ -28,18 +28,14 @@ class Handler extends HandlerTemplate {
   /* start */
   initialize() {
     let $this = this;
-    const {sampleService} = fileImports.service;
-    const {sampleApi} = fileImports.api;
 
-    /* meta */
-    $this.to_template["meta_tags"] = sampleService();
+    /* de-struct and build */
+    let {success:SuccessResponse} = fileImports.models;
+    let successResponse = new SuccessResponse();
+    successResponse.payload = fileImports.data.options;
 
-    /* sample call to an api file */
-    sampleApi();
-
-    /* render */
-    $this.performRender("home/templates/index.html");
+    /* send response to client */
+    $this.res.json(successResponse);
   };
 };
-
 module.exports = Handler.main;
