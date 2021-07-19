@@ -56,18 +56,7 @@ class ApiHandler {
     let {ErrorResponse, SuccessResponse} = fileImports.models;
 
     axios.get(requestUrl).then((response) => {
-      if (response.status === 200 || response.statusText === "OK") {
-        let success = new SuccessResponse();
-        success.payload = response.data;
-        success.code = (response.data.length > 0) ? $this.API_OK : $this.API_NO_DATA;
-        success.message = (response.data.length > 0) ? "Successfully found records. Check payload for more information" : "No records were found in the request";
-        callback(success);
-      }
-      else {
-        let error = new ErrorResponse();
-        error.payload = response.data;
-        callback(error);
-      }
+      callback(response);
     })
     .catch((error) => {
       logApiError(error);
@@ -77,19 +66,15 @@ class ApiHandler {
 
   /* exception handler method */
   sendExceptionCaughtResponseToCaller(error, callback) {
-    let {ErrorResponse} = fileImports.models;
-    let errorResponse = new ErrorResponse();
-
     if ("response" in error) {
-      errorResponse.payload = error.response.data;
+      callback(error.response.data);
     }
     else if ("request" in error) {
-      errorResponse.payload = error.request;
+      callback(error.request);
     }
     else {
-      errorResponse.payload = error.message;
+      callback(error.message);
     }
-    callback(errorResponse);
   };
 };
 module.exports = ApiHandler;

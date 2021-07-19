@@ -10,7 +10,9 @@ class HandlerTemplate {
   constructor(req, res) {
     this.req = req;
     this.res = res;
-    this.to_template = {};
+    this.API_OK = "api-ok";
+    this.API_FAIL = "api-fail";
+    this.API_NO_DATA = "api-no-data";
   }
 
   /* initializer */

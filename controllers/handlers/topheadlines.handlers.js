@@ -43,14 +43,36 @@ class Handler extends HandlerTemplate {
     let requestUrl = $this.service.createRequestForTopHeadlines(payload);
     
     /* make the request and return to client */
-    $this.getInfoAndReturnResponse(requestUrl);
+    $this.getInfo(requestUrl);
   };
 
-  getInfoAndReturnResponse(urlString) {
+  getInfo(urlString) {
     let $this = this;
-    $this.apiHandler.makeGetRequestAndReturnJson(urlString, function(sourcesResponse) {
-      $this.res.json(sourcesResponse);
+    $this.apiHandler.makeGetRequestAndReturnJson(urlString, function(topHeadlinesResponse) {
+      $this.buildAndSendResponse(topHeadlinesResponse);
     });
+  };
+  
+  buildAndSendResponse(response) {
+    let $this = this;
+    let {error:ErrorResponse, success: SuccessResponse} = fileImports.models;
+
+    /* if there were no issues */
+    if (response.status === 200 || response.statusText === "OK") {
+      let success = new SuccessResponse();
+
+      let {totalResults, articles} = response.data;
+      success.payload = {totalResults, articles};
+      success.code = (response.data.articles.length > 0) ? $this.API_OK : $this.API_NO_DATA;
+      success.message = (response.data.articles.length > 0) ? "Successfully found records. Check payload for more information" : "No records were found in the request";
+      $this.res.json(success);
+    }
+    /* if we ran into some problem... */
+    else {
+      let error = new ErrorResponse();
+      error.payload = response;
+      $this.res.json(error);
+    }
   };
 };
 module.exports = Handler.main;

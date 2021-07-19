@@ -19,7 +19,8 @@ class ApiService {
     /* iterate and add to the request url */
     for (let prop in payload) {
       if (payload.hasOwnProperty(prop) && $this.isNotFalsyString(payload[prop])) {
-        requestUrl += `${prop}=${payload[prop]}&`;
+        let queryEncoded = encodeURIComponent(payload[prop]);
+        requestUrl += `${prop}=${queryEncoded}&`;
       }
     }
     requestUrl = requestUrl.substring(0, requestUrl.length - 1);
@@ -38,7 +39,8 @@ class ApiService {
     /* iterate and add to the request url */
     for (let prop in payload) {
       if (payload.hasOwnProperty(prop)) {
-        requestUrl += `${prop}=${payload[prop]}&`;
+        let queryEncoded = encodeURIComponent(payload[prop]);
+        requestUrl += `${prop}=${queryEncoded}&`;
       }
     }
     requestUrl = requestUrl.substring(0, requestUrl.length - 1);
@@ -57,7 +59,8 @@ class ApiService {
     /* iterate and add to the request url */
     for (let prop in payload) {
       if (payload.hasOwnProperty(prop)) {
-        requestUrl += `${prop}=${payload[prop]}&`;
+        let queryEncoded = encodeURIComponent(payload[prop]);
+        requestUrl += `${prop}=${queryEncoded}&`;
       }
     }
     requestUrl = requestUrl.substring(0, requestUrl.length - 1);
