@@ -1,0 +1,74 @@
+{
+    "code": "api-ok",
+    "message": "Successfully found records. Check payload for more information",
+    "payload": {
+        "totalResults": 50,
+        "articles": [
+            {
+                "source": {
+                    "id": null,
+                    "name": "Criptonoticias.com"
+                },
+                "author": null,
+                "title": "Mercados al día: inminente repunte alcista de bitcoin prevén analistas - CriptoNoticias",
+                "description": "Con base en un rápido crecimiento de los usuarios de bitcoin y métricas on-chain saludables, se espera un movimiento ascendente del precio.",
+                "url": "https://www.criptonoticias.com/mercados/mercados-dia-inminente-repunte-alcista-bitcoin-preven-analistas/",
+                "urlToImage": "https://mk0criptonoticijjgfa.kinstacdn.com/wp-content/uploads/2021/06/acumulacion-bitcoin-revierte-tendencia-mercado.jpg",
+                "publishedAt": "2021-07-19T09:33:22Z",
+                "content": "Hechos clave:\r\n<ul><li>Varios segmentos de holders han retomado la acumulación de bitcoin. \r\n</li><li>Los flujos salientes de exchanges de bitcoin en las últimas semanas llegan a 2.000 BTC diarios. \r… [+5316 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "DER AKTIONÄR"
+                },
+                "author": "Nikolas Kessler",
+                "title": "Bitcoin: Tschüss, China – das sind die neuen Mining-Hot-Spots - DER AKTIONÄR",
+                "description": "Durch das Mining-Verbot in China werden die Karten im Bitcoin-Netzwerk derzeit neu gemischt.",
+                "url": "https://www.deraktionaer.de/artikel/maerkte-forex-zinsen/bitcoin-tschuess-china-das-sind-die-neuen-mining-hot-spots-20233876.html",
+                "urlToImage": "https://images.boersenmedien.com/images/e4db1b43-41d8-48ba-8cad-735f250642b0.jpg?w=1280",
+                "publishedAt": "2021-07-19T09:15:29Z",
+                "content": "Durch das Mining-Verbot in China werden die Karten im Bitcoin-Netzwerk derzeit neu gemischt. Daten der Universität Cambridge zeigen allerdings, dass der Mining-Exodus schon vor dem eigentlichen Verbo… [+3626 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Krone.at"
+                },
+                "author": "Sebastian Räuchle",
+                "title": "Stromdiebstahl - Polizei walzt 1069 Bitcoin-Mining-Rechner platt - Kronen Zeitung",
+                "description": "Kurzen Prozess haben die Behörden der malaysischen Stadt Miri Nordwesten des Bundesstaates Sarawak auf der Insel Borneo mit den Rechnern einer ...",
+                "url": "https://www.krone.at/2465483",
+                "urlToImage": "https://imgl.krone.at/scaled/2465474/vb03737/og_image.jpg",
+                "publishedAt": "2021-07-19T07:34:00Z",
+                "content": null
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Finanzen.net"
+                },
+                "author": "finanzen.net Redaktion",
+                "title": "Bitcoin-Indikatoren deuten auf das Ende der Konsolidierung hin - finanzen.net",
+                "description": "Nach dem steilen Kursabfall im April und Mai dieses Jahres, bei welchem sich der Bitcoin-Kurs fast halbiert hat, konsolidiert die Kryptowährung in dem Bereich zwischen 30.000 und 40.000 US-Dollar. Zwei Indikatoren deuten jedoch an, dass der Bitcoin nach oben …",
+                "url": "https://www.finanzen.net/nachricht/devisen/positive-aussichten-bitcoin-indikatoren-deuten-auf-das-ende-der-konsolidierung-hin-10339585",
+                "urlToImage": "https://images.finanzen.net/mediacenter/unsortiert/bitcoin-kryptowaehrung-shutterstock-jaruwan-jaiyangyuen-660x303.jpg",
+                "publishedAt": "2021-07-19T06:20:00Z",
+                "content": "\u0095 Bitcoin befindet sich nach Kurssturz in Konsolidierungsphase \u0095 Bollinger-Bandbreite und Stock-to-Flow-Modell könnten Aufschwung andeuten \u0095 Bitcoin-Community weiterhin gespalten\r\nSeit Monaten in der… [+3341 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Btc-echo.de"
+                },
+                "author": "David Scheider",
+                "title": "Bitcoin-Kursausbruch: Wann kommt der Befreiungsschlag? - BTC-ECHO | Bitcoin & Blockchain Pioneers",
+                "description": "Quo vadis, Bitcoin? Immer noch ist die Kryptowährung im Handelskanal gefangen. Dabei sind die News mehr als bullish. Das Meinungs-ECHO.",
+                "url": "https://www.btc-echo.de/news/is-it-dead-yet-bitcoin-immer-noch-in-handelskanal-gefangen-122488/",
+                "urlToImage": "https://www.btc-echo.de/wp-content/uploads/2021/07/shutterstock_344807408-scaled.jpg",
+                "publishedAt": "2021-07-19T06:00:00Z",
+                "content": "Quo vadis, Bitcoin? Immer noch ist die Kryptowährung im Handelskanal gefangen. Dabei sind die News mehr als bullish. Das Meinungs-ECHO.\r\nManchmal will Bitcoin nicht so recht. Bereits seit Monaten han… [+3292 chars]"
+            }
+        ]
+    }
+}

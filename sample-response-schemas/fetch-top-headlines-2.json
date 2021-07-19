@@ -1,0 +1,35 @@
+{
+    "code": "api-ok",
+    "message": "Successfully found records. Check payload for more information",
+    "payload": {
+        "totalResults": 2,
+        "articles": [
+            {
+                "source": {
+                    "id": "axios",
+                    "name": "Axios"
+                },
+                "author": "Sam Ro",
+                "title": "Bank of America's bitcoin thaw",
+                "description": "This would be a change in tone from a bank that's historically distanced itself from the cryptocurrency business.",
+                "url": "https://www.axios.com/bank-of-america-bitcoin-futures-30e11f62-6d5a-4ac6-a186-7057d62e4544.html",
+                "urlToImage": "https://images.axios.com/9lZLYzKMEjYltssd5_ILfZ0Eej8=/0x0:1920x1080/1366x768/2021/07/19/1626695200419.jpg",
+                "publishedAt": "2021-07-19T12:01:04Z",
+                "content": "Bank of America may be loosening its stance on bitcoin.\r\nDriving the news: Bank of America has approved the trading of cash-settled bitcoin futures for some clients, Coindesks Will Canny and Tanzeel … [+1519 chars]"
+            },
+            {
+                "source": {
+                    "id": "wired",
+                    "name": "Wired"
+                },
+                "author": "Wired",
+                "title": "Why Not Use Self-Driving Cars as Supercomputers?",
+                "description": "Autonomous vehicles use the equivalent of 200 laptops to get around. Some want to tap that computing power to decode viruses or mine bitcoin.",
+                "url": "https://www.wired.com/story/use-self-driving-cars-supercomputers/",
+                "urlToImage": "https://media.wired.com/photos/60f081b4c147fe7a1a367362/191:100/w_1280,c_limit/Business-Autonomous-Vehicles-Supercomputers-1201885684.jpg",
+                "publishedAt": "2021-07-19T11:00:00Z",
+                "content": "Like Dogecoin devotees, the mayor of Reno, and the leaders of El Salvador, Aldo Baoicchi is convinced cryptocurrency is the future. The CEO and founder of Canadian scooter maker Daymak believes this … [+4116 chars]"
+            }
+        ]
+    }
+}

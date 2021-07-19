@@ -1,0 +1,74 @@
+{
+    "code": "api-ok",
+    "message": "Successfully found records. Check payload for more information",
+    "payload": {
+        "totalResults": 141413,
+        "articles": [
+            {
+                "source": {
+                    "id": null,
+                    "name": "ESPN"
+                },
+                "author": "Emily Kaplan",
+                "title": "Predators prospect Prokop announces he is gay",
+                "description": "Predators prospect Luke Prokop has become the first active player under NHL contract to say he is gay, telling ESPN that he wanted to share this publicly to help him play his best hockey.",
+                "url": "https://www.espn.com/nhl/story/_/id/31843069/nashville-predators-prospect-luke-prokop-says-gay-hopes-living-authentic-life-helps-nhl-career",
+                "urlToImage": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2017%2F0602%2Fr214923_1296x729_16%2D9.jpg",
+                "publishedAt": "2021-07-19T13:37:18Z",
+                "content": "Nashville Predators prospect Luke Prokop on Monday became the first active player under NHL contract to come out as gay.\r\nProkop, 19, made the announcement in an Instagram post.\r\n\"It has been quite t… [+1322 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Daily Post Nigeria"
+                },
+                "author": "Mike Rivero",
+                "title": "Outbreak of new polio type 2 threatens Nigeria’s free status – Nigerian Government",
+                "description": "The Federal Government has raised concerns over the recent outbreak of vaccine-derived poliovirus type 2 (cVDPV2) in some parts of the country, just 11 months after being declared free of Wild Polio Virus (WPV) by the Africa Regional Certification Commission …",
+                "url": "https://dailypost.ng/2021/07/06/outbreak-of-new-polio-type-2-threatens-nigerias-free-status-nigerian-government/",
+                "urlToImage": "https://dailypost.ng/wp-content/uploads/2020/06/polio.jpg",
+                "publishedAt": "2021-07-19T13:36:19Z",
+                "content": "The Federal Government has raised concerns over the recent outbreak of vaccine-derived poliovirus type 2 (cVDPV2) in some parts of the country, just 11 months after being declared free of Wild Polio … [+2698 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "ESPN"
+                },
+                "author": "Mark Ogden",
+                "title": "Grealish, Kane, Varane among summer's biggest sagas to be resolved",
+                "description": "With the new club season in Europe's top leagues around the corner, we assess the state of play of the transfer sagas still waiting to be settled.",
+                "url": "https://www.espn.com/soccer/blog-soccer-transfers/story/4435024/grealish-kane-varane-among-summers-biggest-transfer-sagas-yet-to-be-resolved",
+                "urlToImage": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2021%2F0719%2Fr882206_1296x729_16%2D9.jpg",
+                "publishedAt": "2021-07-19T13:36:15Z",
+                "content": "The 2021-22 club season in Europe is less than a month away, with the Premier League, La Liga, Bundesliga and Ligue 1 all due to kick-off before mid-August, while Serie A starts on Aug 22. But despit… [+10069 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Business Wire"
+                },
+                "author": null,
+                "title": "Europe Steel Market Production, Imports & Exports Report 2021-2025 with Potential Impact of COVID-19 - ResearchAndMarkets.com",
+                "description": "DUBLIN--(BUSINESS WIRE)--The \"Europe Steel Market (Production, Imports & Exports) Report with Potential Impact of COVID-19: 2021 Edition\" report has been added to ResearchAndMarkets.com's offering. The European steel market is expected to reach US$107.5 billi…",
+                "url": "https://www.businesswire.com/news/home/20210719005486/en/Europe-Steel-Market-Production-Imports-Exports-Report-2021-2025-with-Potential-Impact-of-COVID-19---ResearchAndMarkets.com",
+                "urlToImage": "https://mms.businesswire.com/media/20210719005486/en/371054/23/ResearchAndMarkets_800px.jpg",
+                "publishedAt": "2021-07-19T13:36:09Z",
+                "content": "DUBLIN--(BUSINESS WIRE)--The \"Europe Steel Market (Production, Imports &amp; Exports) Report with Potential Impact of COVID-19: 2021 Edition\" report has been added to ResearchAndMarkets.com's offerin… [+5624 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Business Wire"
+                },
+                "author": null,
+                "title": "Putting a Stop to the Dropout Crisis: Stride Doubles Down on Academic Excellence with Graduation Guarantee",
+                "description": "HERNDON, Va.--(BUSINESS WIRE)-- #graduation--Dropping out of high school remains a nationwide problem, with two million students – 5% of students – leaving school before graduating each year. As online learning offers many students a second chance and as grad…",
+                "url": "https://www.businesswire.com/news/home/20210719005092/en/Putting-a-Stop-to-the-Dropout-Crisis-Stride-Doubles-Down-on-Academic-Excellence-with-Graduation-Guarantee",
+                "urlToImage": "https://mms.businesswire.com/media/20210719005092/en/839602/23/Stride_Logo_-_Blue.jpg",
+                "publishedAt": "2021-07-19T13:36:09Z",
+                "content": "HERNDON, Va.--(BUSINESS WIRE)--Dropping out of high school remains a nationwide problem, with two million students 5% of students leaving school before graduating each year. As online learning offers… [+3575 chars]"
+            }
+        ]
+    }
+}
