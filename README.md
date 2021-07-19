@@ -1,76 +1,46 @@
-# NodeJS/Express App - Backend Boiler Plate (version 2.0.0)
-Boiler plate for building nodejs/express applications.
+# newsapiorg-node-api
+NewsApiOrg-Node-Api is an open source system desinged to be a __'Convenience Interface'__ for developers planning to use the API system from 
+(https://newsapi.org/)[https://newsapi.org/]. This system is primarily desinged for the _Free Tier_ pricing option with NewsApi thus may have 
+the capacity to scale up to other pricing options as well. Built with __NodeJs/Express__ with an easy to understand directory structure.
 
-## Structure
+NewsApiOrg-Node-Api is subject to changes in the future. All responses received through making API calls is subject to the response received from 
+its source. __You would need to create an account with https://newsapi.org/ to get your secret API key that you would eventually need to interact 
+with this system.__ 
+
+## Objectives:
+* Provide a free/open source system to developers which can be consumed either by direct download or interacting with the hosted enpoint (_which 
+  we would talk about in subsequent sections_)
+* A system that can cater to as many users as it possibly can irrespective of the pricing tier that has been chosen
+* Help developers reduce time to build with an easy to use interface and documenation
+
+## Response Format
+All api calls made through this system will have a standardized response. The structure of the response is as shown below:
 ```
-├── controllers
-│   └── home
-│       ├── api
-│       │   └── sample.api.js
-│       ├── data
-│       │   └── example_1.json
-│       ├── handlers
-│       │   └── index.handlers.js
-│       └── service
-│           └── sample.service.js
-├── middleware
-│   └── app.middleware.js
-├── models
-│   ├── error-response.models.js
-│   └── success-response.models.js
-├── package.json
-├── package-lock.json
-├── public
-│   └── notes.txt
-├── README.md
-├── routes
-│   ├── home
-│   │   └── index.routes.js
-│   ├── index.routes.js
-│   └── static.routes.js
-├── server.js
-├── static
-│   ├── assets
-│   │   ├── icons
-│   │   │   ├── app-favicon.png
-│   │   │   └── app-icon.svg
-│   │   └── images
-│   │       └── cubes-bg.jpg
-│   ├── css
-│   │   └── home
-│   │       └── styles.min.css
-│   ├── scripts
-│   │   └── home
-│   │       └── index.min.js
-│   └── views
-│       ├── home
-│       │   └── templates
-│       │       ├── content.partial.html
-│       │       └── index.html
-│       └── partials
-│           ├── app-footer
-│           │   └── index.html
-│           ├── app-meta
-│           │   └── index.html
-│           ├── app-nav
-│           │   └── index.html
-│           └── app-webfonts
-│               └── index.html
-└── utils
-    ├── handler-template.js
-    └── logger.js
+{
+  code: // 'some-code'
+  message: // 'some example message'
+  payload: // some stuff that you can use
+}
 ```
+* __code__:<br/>
+Responses marked with __'api-ok'__ means that there was no error and most likely, the payload will have information that you can consume.<br/>
+Responses marked with __'api-no-data'__ means that there was no error but there were no records that could be found based on your request.<br/>
+Responses marked with __'api-fail'__ means that there was some error involved with the request, the payload may have some information for you.
 
-* __server.js__: central point from which the application would start running
-* __package.json__: All npm packages contain a file, usually in the project root, called package. json - this file holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies
-* __package-lock.json__:  automatically generated for any operations where npm modifies either the node_modules tree, or package. json . It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.
-* __controllers__: directory that houses all methods that would handle requests being made to an endpoint. Please check the structure per route in the directory for more information
-* __middleware__: directory that houses all methods that would act as a middleware or logic, that would be executed before reaching the actual route
-* __models__: schema for responses
-* __public__: serves as a good host for all publicly accessible files. For example a sitemap for an e-commerce file
-* __routes__: directory that comprises of a central routes and static file service config handler. Also, every page route will be placed here. 
-* __static__: directory thats serves as a host for all static frontend assets including media files
-* __utils__: good place to keep anything that services its purpose as a common utility
+* __message__:<br/>
+Generally meant to be a human readble portion of the response, the purpose of this field is to give some form of clarity for the response recieved. 
+You could for example, gain some insight into the response received during debugging. Not adviseable to use as a constant or static portion in your 
+code (_when writing conditional statements_)
 
-## Start Server
-To start the server, ensure to install all dependencies via ```npm install``` and then run ```npm run start``` as shown in package.json file.
+* __payload__:<br/>
+This is the place where we place the response from our source, which would carry all the information that you would need for consuming data. There may 
+be certain conditions where there would be non-sensible payloads (_when you've experienced an exception possibly!_) but overall, check this space for 
+the data that needs to be consumed for your project
+
+## Feature Requests or Raising Issues
+If you would like to suggest a new feature for this app or perhaps you have experienced some problems, go ahead and raise a good old github issue. 
+I'll work on this at the earliest possible depending on my schedule and keep you posted as well.
+
+## Support this Project
+I'd be very grateful if you could support this project with a Github star as this would go a long way in building more apps like these. 
+Happy Coding!
