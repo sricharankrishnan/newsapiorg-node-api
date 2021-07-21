@@ -38,7 +38,7 @@ be certain conditions where there would be non-sensible payloads (_when you've e
 the data that needs to be consumed for your project
 
 ## API Request Endpoints
-The base url for the endpoint is 'https://www.example.com' and this would now be refered to simply as '__BASE-URL__' for convenince. 
+The base url for the endpoint is <https://newsapiorg-node-api.glitch.me> and this would now be refered to simply as '__BASE-URL__' for convenince. 
 You can refer to the json respnse from _'/api/options'_ endpoint to see the list of short codes that you can use here. __Responses may 
 work successfully for certain fields if you enter only 1 option at a time__. Here are the details of the endpoints:
 * __[GET Request]__ BASE-URL/<br/>
