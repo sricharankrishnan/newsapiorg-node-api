@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/github/license/sricharankrishnan/newsapiorg-node-api)
 <br/>
 <br/>
-## About
+### About
 NewsApi-Node-Api is an open source system desinged to be a __'Convenience Interface'__ for developers planning to use the API system from 
 <https://newsapi.org/>. This system is primarily desinged for the _Free Tier_ pricing option with NewsApi thus may have 
 the capacity to scale up to other pricing options as well. Built with __NodeJs/Express__ with an easy to understand directory structure.
@@ -14,18 +14,26 @@ NewsApi-Node-Api is subject to changes in the future. All responses received thr
 its source. __You would need to create an account with <https://newsapi.org/> to get your secret API key that you would eventually need to interact 
 with this system__.<br/><br/>
 
-## Objectives
+### Objectives
 * Provide a free/open source system to developers which can be consumed either by direct download or interacting with the hosted enpoint (_which 
   we would talk about in subsequent sections_)
 * A system that can cater to as many users as it possibly can irrespective of the pricing tier that has been chosen
 * Help developers reduce time to build with an easy to use interface and documenation
 <br/><br/>
 
-## Getting Started
+### Getting Started
 The first and the easiest way to use this system, is through the API endpoints mentioned below. Here there is a clear indication of the type of request that needs to be used along with a payload (if applicable). Alternatively, you could download or clone this repository, perform ```npm install``` to fetch all the required NPM Packages and run the server locally.<br/><br/>
 
+### Prerequisites
+The only major requirement is a current and stable version of NodeJS with ES2015 support.
+<br/><br/>
 
-## Response Format
+### Built Using
+- [NodeJS](https://nodejs.org/en/)
+- [ExpressJS](https://expressjs.com/)
+<br/><br/>
+
+### Response Format
 All api calls made through this system will have a standardized response. The structure of the response is as shown below:
 ```
 {
@@ -46,7 +54,7 @@ All api calls made through this system will have a standardized response. The st
 ![payload](https://img.shields.io/badge/payload-%7B%7D-orange) This is the place where we place the response from our source, which would carry all the information that you would need for consuming data. There may be certain conditions where there would be non-sensible payloads (_when you've experienced an exception possibly!_) but overall, check this space for the data that needs to be consumed for your project.<br/><br/>
 
 
-## API Request Endpoints
+### Usage
 The base url for the endpoint is <https://newsapiorg-node-api.glitch.me> and this would now be refered to simply as '__BASE-URL__' for convenince. 
 You can refer to the json respnse from _'/api/options'_ endpoint to see the list of short codes that you can use here. __Responses may 
 work successfully for certain fields if you enter only 1 option at a time__. Here are the details of the endpoints:
@@ -112,11 +120,13 @@ work successfully for certain fields if you enter only 1 option at a time__. Her
   foo@bar:~$ curl -XPOST -d '{"apiKey": "your-secret-api-key", "q": "covid 19", "sortBy": "publishedAt", "language": "en", "pageSize": 5, "page": 1}' 'https://newsapiorg-node-api.glitch.me/api/fetch-everything'
   ```
   Please refer to {app}/sample-response-schemas/fetch-everything-response.json for sample responses.
+<br/><br/>
 
-## Feature Requests or Raising Issues
+### Feature Requests or Raising Issues
 If you would like to suggest a new feature for this app or perhaps you have experienced some problems, go ahead and raise a good old github issue. 
 I'll work on this at the earliest possible depending on my schedule and keep you posted as well.
+<br/><br/>
 
-## Support this Project
+### Support this Project
 I'd be very grateful if you could support this project with a Github star as this would go a long way in building more apps like these. 
 Happy Coding!
