@@ -1,12 +1,16 @@
 {
-  "name": "node-app-jquery-backend",
+  "name": "newsapiorg-node-api",
   "version": "1.0.0",
-  "description": "NodeJS Application - Backend Structure",
+  "description": "NewsApi-Node-Api is an open source system desinged to be a 'Convenience Interface' for developers planning to use the API system from https://newsapi.org/. This system is primarily desinged for the Free Tier pricing option with NewsApi thus may have the capacity to scale up to other pricing options as well.",
   "main": "server.js",
   "scripts": {
     "start": "nodemon ./server.js"
   },
   "author": "Sricharan Krishnan | https://github.com/sricharankrishnan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sricharankrishnan/newsapiorg-node-api"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
@@ -18,5 +22,5 @@
   "devDependencies": {
     "nodemon": "^2.0.2"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
