@@ -1,6 +1,6 @@
 # newsapi-node-api (Open Source API Interface)
 
-![Status](https://img.shields.io/github/checks-status/sricharankrishnan/newsapiorg-node-api/master)
+![Version](https://img.shields.io/github/v/release/sricharankrishnan/newsapiorg-node-api?sort=semver)
 ![Open Issues](https://img.shields.io/github/issues-raw/sricharankrishnan/newsapiorg-node-api)
 ![Closed Issues](https://img.shields.io/github/issues-closed-raw/sricharankrishnan/newsapiorg-node-api)
 ![License](https://img.shields.io/github/license/sricharankrishnan/newsapiorg-node-api)
