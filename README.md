@@ -27,7 +27,7 @@ with this system**.<br/><br/>
 
 ### Getting Started
 
-The first and the easiest way to use this system, is through the API endpoints mentioned below. Here there is a clear indication of the type of request that needs to be used along with a payload (if applicable). Alternatively, you could download or clone this repository, perform `npm install` to fetch all the required NPM Packages and run the server locally.<br/><br/>
+The first and the easiest way to use this system, is through the API endpoints mentioned below. Here there is a clear indication of the type of request that needs to be used along with a payload (if applicable). Alternatively, you could download or clone this repository, perform `npm install` to fetch all the required NPM Packages and run the server locally using the command ```npm run start```.<br/><br/>
 
 ### Prerequisites
 
